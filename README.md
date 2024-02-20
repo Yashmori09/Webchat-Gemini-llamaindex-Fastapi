@@ -1,7 +1,7 @@
 # Webchat-Gemini-llamaindex-Fastapi
 ## Gemini
 Google's Gemini LLM stands out as a multimodal maestro, excelling in understanding not just text, but also images, audio, and video. It boasts state-of-the-art performance, exceeding benchmarks in various tasks and offering advanced reasoning abilities. Choose from different tiers like Pro, Ultra, or even the experimental 1.5 Pro, and delve into its potential for generating text, translating languages, and tackling complex problems – all while its capabilities continue to evolve.
-# How to run the Mistral-7b on Colab ?
+# How to run the Gemini on Colab ?
 ```bash
 upload the gemini_llamaindex.ipynb file on your colab which is located in the <research> folder .
 ```
