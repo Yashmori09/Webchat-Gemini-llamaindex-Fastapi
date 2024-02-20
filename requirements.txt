@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+jinja2
+python-multipart
+python-dotenv
+transformers
+llama_index
+google-generativeai 
+langchain-google-genai
+langchain
+sentence-transformers
+llama-index-llms-langchain
+llama-index-embeddings-langchain
