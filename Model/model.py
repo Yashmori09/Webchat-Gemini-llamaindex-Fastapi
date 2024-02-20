@@ -1,14 +1,11 @@
 import os
 from dotenv import load_dotenv
-from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.prompts import PromptTemplate
-from langchain.chains import LLMChain
+from langchain_google_genai.chat_models import ChatGoogleGenerativeAI
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from llama_index.core import ServiceContext
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, ServiceContext
-from llama_index.embeddings.huggingface_optimum import OptimumEmbedding
 from llama_index.core import Settings
-from huggingface_hub import hf_hub_download
+
 
 class Model:
     def __init__(self):
@@ -26,7 +23,7 @@ class Model:
             model_name=model_name
             )
         print("emb loaded")
-        documents = SimpleDirectoryReader(r"D:\website-chatbot-gemini-fastapi\artifacts",recursive=True).load_data()
+        documents = SimpleDirectoryReader(r"artifacts",recursive=True).load_data()
         
         print("doc loaded")
         Settings.llm = None
